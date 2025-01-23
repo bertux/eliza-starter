@@ -99,5 +99,9 @@ export function getTokenForProvider(
       );
     case ModelProviderName.GROQ:
       return character.settings?.secrets?.GROQ_API_KEY || settings.GROQ_API_KEY;
+    case ModelProviderName.AKASH_CHAT_API:
+        return (
+          character.settings?.secrets?.AKASH_CHAT_API_KEY || settings.AKASH_CHAT_API_KEY
+        );
   }
 }
