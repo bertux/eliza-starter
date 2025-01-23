@@ -1,11 +1,12 @@
 import { Character, Clients, defaultCharacter, ModelProviderName } from "@elizaos/core";
+import { evmPlugin } from "@elizaos/plugin-evm";
 
 export const character: Character = {
     ...defaultCharacter,
     // name: "Eliza",
-    // plugins: [],
-    // clients: [],
-    // modelProvider: ModelProviderName.OPENAI,
+    plugins: [evmPlugin],
+    clients: [Clients.TELEGRAM],
+    modelProvider: ModelProviderName.AKASH_CHAT_API,
     // settings: {
     //     secrets: {},
     //     voice: {
