@@ -10,7 +10,7 @@ export const character: Character = {
     settings: {
         "chains": {
             "evm": [
-                "arthera"
+                "fuse"
             ]
         }
     },
