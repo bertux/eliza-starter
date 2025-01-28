@@ -1,10 +1,10 @@
 import { Character, Clients, defaultCharacter, ModelProviderName } from "@elizaos/core";
-import { evmPlugin } from "@elizaos/plugin-evm";
+import { fusePlugin } from "@elizaos/plugin-fuse";
 
 export const character: Character = {
     ...defaultCharacter,
     // name: "Eliza",
-    plugins: [evmPlugin],
+    plugins: [fusePlugin],
     clients: [Clients.TELEGRAM],
     modelProvider: ModelProviderName.AKASH_CHAT_API,
     settings: {
