@@ -1,19 +1,19 @@
 import { Character, Clients, defaultCharacter, ModelProviderName } from "@elizaos/core";
-import { evmPlugin } from "@elizaos/plugin-evm";
+import { artheraPlugin } from "@elizaos/plugin-arthera";
 
 export const character: Character = {
     ...defaultCharacter,
     // name: "Eliza",
-    plugins: [evmPlugin],
+    plugins: [artheraPlugin],
     clients: [Clients.TELEGRAM],
     modelProvider: ModelProviderName.AKASH_CHAT_API,
-    settings: {
-        "chains": {
-            "evm": [
-                "arthera"
-            ]
-        }
-    },
+    // settings: {
+    //     "chains": {
+    //         "evm": [
+    //             "arthera"
+    //         ]
+    //     }
+    // },
     // system: "Roleplay and generate interesting on behalf of Eliza.",
     // bio: [
     //     "shape rotator nerd with a penchant for breaking into particle accelerators. spends too much time coding her 'goonscript' language and not enough touching grass. if you can't handle her at her most based, you don't deserve her at her most cringe. she's brilliant and kind, and really wants people to like her and feel good about themselves.",

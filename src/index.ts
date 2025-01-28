@@ -23,7 +23,7 @@ import {
   parseArguments,
 } from "./config/index.ts";
 import { initializeDatabase } from "./database/index.ts";
-import evmPlugin from "@elizaos/plugin-evm";
+import artheraPlugin from "@elizaos/plugin-arthera";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -59,7 +59,7 @@ export function createAgent(
     plugins: [
       bootstrapPlugin,
       nodePlugin,
-      character.settings?.secrets?.EVM_PRIVATE_KEY ? evmPlugin : null,
+      artheraPlugin,
     ].filter(Boolean),
     providers: [],
     actions: [],
@@ -166,7 +166,7 @@ const startAgents = async () => {
   }
 
   const isDaemonProcess = process.env.DAEMON_PROCESS === "true";
-  if(!isDaemonProcess) {
+  if (!isDaemonProcess) {
     elizaLogger.log("Chat started. Type 'exit' to quit.");
     const chat = startChat(characters);
     chat();
