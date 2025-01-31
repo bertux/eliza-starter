@@ -6,7 +6,7 @@
   "settings": {
     "chains": {
       "evm": [
-        "fuse"
+        "lukso"
       ]
     }
   },

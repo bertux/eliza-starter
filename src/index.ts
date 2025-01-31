@@ -23,7 +23,7 @@ import {
   parseArguments,
 } from "./config/index.ts";
 import { initializeDatabase } from "./database/index.ts";
-import fusePlugin from "@elizaos/plugin-fuse";
+import luksoPlugin from "@elizaos/plugin-lukso";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -59,7 +59,7 @@ export function createAgent(
     plugins: [
       bootstrapPlugin,
       nodePlugin,
-      fusePlugin,
+      luksoPlugin,
     ].filter(Boolean),
     providers: [],
     actions: [],
