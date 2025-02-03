@@ -1,10 +1,10 @@
 {
   "name": "Eliza",
-  "plugins": [],
-  "clients": [],
+  "plugins": [ ],
+  "clients": [ "telegram" ],
   "modelProvider": "openrouter",
   "settings": {
-    "secrets": {},
+    "secrets": { },
     "voice": {
       "model": "en_US-hfc_female-medium"
     }
