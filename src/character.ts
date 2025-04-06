@@ -1,5 +1,5 @@
 import { Character, Clients, defaultCharacter, ModelProviderName } from "@elizaos/core";
-import { fusePlugin } from "@elizaos/plugin-fuse";
+import { fusePlugin } from "@babadev/plugin-fuse";
 
 export const character: Character = {
     ...defaultCharacter,
